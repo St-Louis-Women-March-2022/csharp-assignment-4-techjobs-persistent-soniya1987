@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "TestTaskOne",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TaskOne",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TestTaskThree",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TestTaskThree",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "AddJobViewModelTests",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter AddJobViewModelTests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "AddJobViewsTests",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter AddJobViewsTests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "EmployerControllerTests",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter EmployerControllerTests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "EmployerViewModelTests",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter EmployerViewModelTests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "EmployerViewsTests",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter EmployerViewsTests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "HomeControllerTests",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter HomeControllerTests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
