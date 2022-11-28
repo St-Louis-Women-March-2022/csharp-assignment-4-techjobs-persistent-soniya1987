@@ -23,7 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Views\Employer\" />
     <Folder Include="Views\List\" />
     <Folder Include="Views\Search\" />
