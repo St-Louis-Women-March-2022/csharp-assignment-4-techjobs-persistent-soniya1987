@@ -37,7 +37,7 @@ namespace TechJobsPersistentAutograded
             services.AddControllersWithViews();
             services.AddScoped<JobRepository>();
             services.AddScoped<JobDbContext>();
-            services.AddDbContext<JobDbContext>(options => options.UseMySql(Configuration.GetConnectionString()));
+            services.AddDbContext<JobDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
         }
 
 

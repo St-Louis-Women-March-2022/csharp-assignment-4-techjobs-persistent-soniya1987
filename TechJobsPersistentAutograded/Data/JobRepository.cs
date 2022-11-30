@@ -93,7 +93,7 @@ namespace TechJobsPersistentAutograded.Data
         {
             return _context.Jobs.Include(j => j.Employer).Single(j => j.Id == id);
         }
-
+            
         public virtual IEnumerable<JobSkill> FindSkillsForJob(int id)
         {
             return _context.JobSkills

@@ -1,18 +1,34 @@
-﻿<h1>Add a Job</h1>
+﻿@using TechJobsPersistentAutograded.ViewModels;
+@model AddJobViewModel
+<h1>Add a Job</h1>
 
 
 <form asp-controller="Home" asp-action="ProcessAddJobForm" method="post">
 
     <div class="form-group">
 
-        <label>Name</label>
-
-        <input class="form-control" />
-
-        <span></span>
+        <label asp-for="Name">Job Name :</label>
+        <input asp-for="Name" />
 
     </div>
+    <div class="form-group">
+        <label asp-for="EmployerId">Category</label>
+        <select asp-for="EmployerId" asp-items="Model.Employers"></select>
+        <a asp-controller="Employer" asp-action="Add">Add Employer</a>
+    </div>
+    @if (Model.Skills != null)
+    {
+        <div class="form-group">
 
+            @foreach (var skill in Model.Skills)
+            {
+
+                <input type="checkbox" name="selectedSkills" value="@skill.Id"/>
+                <label asp-for="@skill.Name">@skill.Name</label>
+            }
+            <a asp-controller="Skill" asp-action="Add">Add Skill</a>
+        </div>
+    }
     <input type="submit" value="Add Job" />
 
 </form>
