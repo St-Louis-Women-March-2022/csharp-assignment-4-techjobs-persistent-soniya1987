@@ -17,9 +17,10 @@ namespace TechJobsPersistentAutograded.Models
 
         public Job()
         {
+            JobSkills = new List<JobSkill>();   
         }
 
-        public Job(string name)
+        public Job(string name) : this()
         {
             Name = name;
         }

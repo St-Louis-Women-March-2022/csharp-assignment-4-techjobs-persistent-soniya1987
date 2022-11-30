@@ -7,3 +7,6 @@ SELECT * FROM techjobs.employers
 WHERE Location= "St. Louis";
 
 --Part 3
+SELECT  name, description FROM techjobs.skills skills
+where skills.id in 
+(select jobskills.skillid from techjobs.jobskills);

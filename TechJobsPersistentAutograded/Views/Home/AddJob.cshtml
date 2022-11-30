@@ -14,8 +14,21 @@
     <div class="form-group">
         <label asp-for="EmployerId">Category</label>
         <select asp-for="EmployerId" asp-items="Model.Employers"></select>
+        <a asp-controller="Employer" asp-action="Add">Add Employer</a>
     </div>
+    @if (Model.Skills != null)
+    {
+        <div class="form-group">
 
+            @foreach (var skill in Model.Skills)
+            {
+
+                <input type="checkbox" name="selectedSkills" value="@skill.Id"/>
+                <label asp-for="@skill.Name">@skill.Name</label>
+            }
+            <a asp-controller="Skill" asp-action="Add">Add Skill</a>
+        </div>
+    }
     <input type="submit" value="Add Job" />
 
 </form>
